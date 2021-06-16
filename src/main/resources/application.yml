@@ -1,0 +1,21 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  health:
+    diskSpace:
+      enabled: false
+    ping:
+      enabled: false
+    dias:
+      enabled: true
+    saltoleto:
+      enabled: true
+
+info:
+  app:
+    name: Custom Health Check Application
